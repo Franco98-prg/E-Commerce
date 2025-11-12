@@ -2,9 +2,9 @@ import {Button} from "react-bootstrap";
 import "./style.css"
 function LogoCarrito() {
   return (
-    <div className="d-flex align-items-center" style={{ cursor: "pointer" }}>
+    <div className="d-flex align-items-center"  style={{ cursor: "pointer" }}>
       <Button className="buttonNav">
-        <img 
+        <img
           src="./src/assets/cart3.svg" 
           alt="carrito" 
           width="28"

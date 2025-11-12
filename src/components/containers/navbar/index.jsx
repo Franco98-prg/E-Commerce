@@ -1,21 +1,4 @@
-// import LogoCarrito from "../logoCarrito"
 
-// function NavBar() {
-//   return (
-//     <nav className="navbar">
-//         <h1>Nuestra Tienda</h1>
-//       <ul className="nav-links">
-//         <li><a href="#">Inicio</a></li>
-//         <li><a href="#">Productos</a></li>
-//         <li><a href="#">Contacto</a></li>
-//       </ul>
-
-//       <LogoCarrito />
-//     </nav>
-//   )
-// }
-
-// export default NavBar
 
 import { Navbar, Container, Nav } from "react-bootstrap";
 import LogoCarrito from "../logoCarrito";
