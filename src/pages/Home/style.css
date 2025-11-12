@@ -1,0 +1,22 @@
+.home-wrapper {
+  width: 100%;
+  background: linear-gradient(180deg, #B67E4D 0%, #ffffff 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #212529;
+}
+
+p {
+  font-size: 1.1rem;
+}
