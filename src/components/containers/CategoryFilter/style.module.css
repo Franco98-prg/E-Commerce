@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+  padding: 10px 0;
+}
+
+.button {
+  padding: 8px 18px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: 1px solid #CFA878;
+  color: #4B2E1F;
+  background-color: #F3E9D7;
+  transition: 0.25s ease;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: #e5d8c1;
+  border-color: #4B2E1F;
+}
+
+.active {
+  background-color: #4B2E1F;
+  color: #F3E9D7;
+  border-color: #4B2E1F;
+}

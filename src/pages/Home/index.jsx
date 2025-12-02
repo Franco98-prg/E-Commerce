@@ -1,31 +1,44 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
-import Counter from "../../components/common/Counter";
-import "./style.css";
+import { Link } from "react-router-dom";
+import styles from "./style.module.css";
 
-const Home = () => {
-  return (
-    <div className="home-wrapper">
-      <Container fluid className="text-center py-5">
-        <Row className="justify-content-center">
-          <Col md={10} lg={8}>
-            <h2 className="fw-bold mb-4">Bienvenido a Kafëa </h2>
-            <p className="text-muted mb-5">
-              Proximamente conoceras los mejores cafe de mayores puntajes.
-            </p>
+const Home = () => (
+  <div className={styles.container}>
+    
+    {/* HERO */}
+    <section className={styles.hero}>
+      <h1 className={styles.title}>Bienvenido a Kafëa</h1>
+      <p className={styles.subtitle}>
+        El aroma, la esencia y la pureza del café artesanal.
+      </p>
 
-            <div className="counter-container">
-              {/* <Counter /> */}
-              <h2>Coming Soon</h2>
-            </div>
+      <Link to="/products" className={styles.heroButton}>
+        Ver Productos
+      </Link>
+    </section>
 
-            <Button variant="dark" className="mt-4" >
-              <a href="./products">Ver catálogo</a>
-            </Button>
-          </Col>
-        </Row>
-      </Container>
-    </div>
-  );
-};
+    {/* DESTACADOS */}
+    <section className={styles.featured}>
+      <h2 className={styles.sectionTitle}>Destacados</h2>
+
+      <div className={styles.cards}>
+        <div className={styles.card}>
+          <h3>Café de Colombia</h3>
+          <p>Notas afrutadas y balance perfecto.</p>
+        </div>
+
+        <div className={styles.card}>
+          <h3>Café de Brasil</h3>
+          <p>Cuerpo intenso, aroma dulce y tostado natural.</p>
+        </div>
+
+        <div className={styles.card}>
+          <h3>Café de Kenia</h3>
+          <p>Personalidad cítrica y sabor profundo.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+);
 
 export default Home;

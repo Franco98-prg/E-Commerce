@@ -1,0 +1,22 @@
+.container {
+  max-width: 800px;
+  margin: 60px auto;
+  background-color: var(--kafea-white);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--kafea-primary);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text {
+  color: var(--kafea-text-dark);
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}

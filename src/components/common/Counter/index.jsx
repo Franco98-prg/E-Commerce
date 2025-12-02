@@ -1,28 +1,36 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Button from "../Button";
+import styles from "./style.module.css";
 
-const Counter = () => {
+const Counter = ({ initial = 1, min = 1, max = 10, onChange }) => {
+  const [num, setNum] = useState(initial);
 
-    const [num, setNum] = useState(0)
+  const sumar = () => {
+    if (num < max) setNum(num + 1);
+  };
 
-    const sumar = () => {
-        setNum (num +1)
-    }
+  const restar = () => {
+    if (num > min) setNum(num - 1);
+  };
 
+  useEffect(() => {
+    if (onChange) onChange(num);
+  }, [num]);
 
-    const restar = () => {
-        if (num > 0) setNum (num -1)
-    }
+  return (
+    <div className={styles.wrapper}>
+      <Button callback={restar} variant="secondary">-</Button>
 
+      <input
+        type="text"
+        value={num}
+        readOnly
+        className={styles.input}
+      />
 
-    return (
-        <div>
-            <button style={{ backgroundColor: "black", color:"white"}} onClick={restar} >-</button>
-            <input type="text" value={num} />
-            <button style={{ backgroundColor: "black", color:"white"}} onClick={sumar} >+</button>
-        </div>
-
-    )
-
+      <Button callback={sumar} variant="primary">+</Button>
+    </div>
+  );
 };
 
 export default Counter;

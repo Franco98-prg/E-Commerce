@@ -1,0 +1,32 @@
+.footer {
+  background-color: #F3E9D7; /* crema suave */
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-top: 1px solid #CFA878; /* caramelo */
+}
+
+.inner {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brand {
+  color: #4B2E1F; /* café oscuro */
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.text {
+  color: #1C140F; /* negro café */
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 12px;
+}
+
+.copy {
+  color: #4B2E1F;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}

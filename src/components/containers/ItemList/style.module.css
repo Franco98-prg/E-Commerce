@@ -1,0 +1,67 @@
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  gap: 35px;
+  padding: 20px 0;
+}
+
+/* CARD */
+.card {
+  background-color: var(--kafea-white);
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  transition: 0.2s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* IMAGE */
+.img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* TITLE */
+.title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--kafea-primary);
+  margin-bottom: 6px;
+}
+
+/* CATEGORY */
+.category {
+  color: var(--kafea-accent);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+/* PRICE */
+.price {
+  color: var(--kafea-text-dark);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/* BUTTON */
+.button {
+  background: transparent;
+  border: 1px solid var(--kafea-primary);
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--kafea-primary);
+  color: white;
+}

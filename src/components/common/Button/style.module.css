@@ -1,0 +1,56 @@
+.btn {
+  border: none;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Primario — Café Oscuro */
+.primary {
+  background-color: #4B2E1F;
+  color: #F3E9D7;
+}
+
+.primary:hover {
+  background-color: #3d2419;
+  transform: translateY(-2px);
+}
+
+/* Secundario — Crema suave */
+.secondary {
+  background-color: #F3E9D7;
+  color: #4B2E1F;
+  border: 1px solid #CFA878;
+}
+
+.secondary:hover {
+  background-color: #e9dfc8;
+  transform: translateY(-2px);
+}
+
+/* Outline elegante */
+.outline {
+  background-color: transparent;
+  color: #4B2E1F;
+  border: 2px solid #4B2E1F;
+}
+
+.outline:hover {
+  background-color: #4B2E1F;
+  color: #F3E9D7;
+}
+
+/* Verde Hojas */
+.success {
+  background-color: #6B8A5B;
+  color: #F3E9D7;
+}
+
+.success:hover {
+  background-color: #587448;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,90 @@
+/* GENERAL */
+.container {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #1C140F;
+  font-family: system-ui, sans-serif;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+  ),
+  url("/src/assets/Products/ChatGPT\ Image\ 29\ nov\ 2025\,\ 23_27_51.png") center/cover no-repeat;
+  height: 32vh;
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #F3E9D7;
+  border-radius: 20px;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 3rem;
+  color: #bebdbdaa;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #d4d4d4b1;
+  margin-bottom: 46px;
+}
+
+.heroButton {
+  display: inline-block;
+  background-color: #4b2e1faf;
+  color: #f3e9d7c1;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.heroButton:hover {
+  background-color: #3d2419;
+  transform: translateY(-3px);
+}
+
+/* DESTACADOS */
+.sectionTitle {
+  font-size: 2rem;
+  color: #4B2E1F;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  border: 1px solid #CFA878;
+  transition: all 0.25s ease;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #4B2E1F;
+  font-size: 1.3rem;
+}
+
+.card p {
+  color: #1C140F;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+  border-color: #4B2E1F;
+}

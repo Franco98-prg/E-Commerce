@@ -3,9 +3,14 @@
   line-height: 100%;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
+  --kafea-bg: #F3E9D7;
+  --kafea-primary: #4B2E1F;
+  --kafea-accent: #CFA878;
+  --kafea-green: #6B8A5B;
+  --kafea-text-dark: #1C140F;
+  --kafea-white: #FFFFFF;
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
