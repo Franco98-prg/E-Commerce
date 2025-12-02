@@ -2,22 +2,83 @@ import styles from "./style.module.css";
 
 const Contact = () => {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Contacto</h1>
+    <div className={styles.page}>
+      
+      {/* HERO */}
+      <section className={styles.hero}>
+        <h1 className={styles.title}>Contacto</h1>
+        <p className={styles.subtitle}>
+          Estamos para ayudarte. Completá el formulario o usá los medios de contacto.
+        </p>
+      </section>
 
-      <label className={styles.label}>Nombre</label>
-      <input type="text" className={styles.input} placeholder="Tu nombre" />
+      {/* CONTENIDO PRINCIPAL */}
+      <section className={styles.main}>
+        
+        {/* FORMULARIO */}
+        <div className={styles.formCard}>
+          <h2 className={styles.formTitle}>Enviar un mensaje</h2>
 
-      <label className={styles.label}>Email</label>
-      <input type="email" className={styles.input} placeholder="Correo electrónico" />
+          <form className={styles.form}>
+            
+            <div className={styles.field}>
+              <label>Nombre completo</label>
+              <input type="text" placeholder="Tu nombre" required />
+            </div>
 
-      <label className={styles.label}>Mensaje</label>
-      <textarea className={styles.textarea} rows="4" placeholder="Escribe tu mensaje..." />
+            <div className={styles.field}>
+              <label>Email</label>
+              <input type="email" placeholder="tu@email.com" required />
+            </div>
 
-      <button className={styles.button}>Enviar</button>
+            <div className={styles.field}>
+              <label>Asunto</label>
+              <input type="text" placeholder="Consulta, soporte, pedido..." required />
+            </div>
+
+            <div className={styles.field}>
+              <label>Mensaje</label>
+              <textarea rows="5" placeholder="Escribí tu mensaje..." required></textarea>
+            </div>
+
+            <button type="submit" className={styles.button}>
+              Enviar
+            </button>
+
+          </form>
+        </div>
+
+        {/* INFORMACIÓN DE CONTACTO */}
+        <div className={styles.infoCard}>
+          <h2 className={styles.infoTitle}>Información</h2>
+
+          <div className={styles.infoBlock}>
+            <h3>Email</h3>
+            <p>contacto@kafea.com</p>
+          </div>
+
+          <div className={styles.infoBlock}>
+            <h3>Horario</h3>
+            <p>Lunes a Viernes</p>
+            <p>9:00 — 18:00 hs</p>
+          </div>
+
+          <div className={styles.infoBlock}>
+            <h3>Ubicación</h3>
+            <p>Buenos Aires, Argentina</p>
+            <p>Av. Aroma del Café 123</p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* CIERRE */}
+      <section className={styles.footerText}>
+        <p>Respondemos dentro de las próximas 24 horas hábiles.</p>
+      </section>
+
     </div>
   );
 };
 
 export default Contact;
-
