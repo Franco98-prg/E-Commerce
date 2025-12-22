@@ -14,7 +14,7 @@ import Header from "./components/layout/Header";
 
 //cart
 import Cart from "./components/containers/Cart";
-import { CartProvider } from "./context/cartContext.jsx";
+import { CartProvider } from "./context/CartContext.jsx";
 import Checkout from "./components/containers/Checkout";
 
 
