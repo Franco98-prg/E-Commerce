@@ -1,44 +1,35 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Importamos Link para el botón "Ver todo"
+import ItemListContainer from "../../components/containers/ItemListContainer";
+import Button from "../../components/common/Button"; // Si tienes un botón común
 import styles from "./style.module.css";
 
-const Home = () => (
-  <div className={styles.container}>
-    
-    {/* HERO */}
-    <section className={styles.hero}>
-      <h1 className={styles.title}>Bienvenido a Kafëa</h1>
-      <p className={styles.subtitle}>
-        El aroma, la esencia y la pureza del café artesanal.
-      </p>
+const Home = () => {
+  return (
+    <div className={styles.container}>
+      {/* Sección Hero */}
+      <section className={styles.hero}>
+        <h1 className={styles.title}>Bienvenido a Kafëa</h1>
+        <p className={styles.subtitle}>
+          El mejor café de especialidad, directo a tu taza.
+        </p>
+      </section>
 
-      <Link to="/products" className={styles.heroButton}>
-        Ver Productos
-      </Link>
-    </section>
-
-    {/* DESTACADOS */}
-    <section className={styles.featured}>
-      <h2 className={styles.sectionTitle}>Destacados</h2>
-
-      <div className={styles.cards}>
-        <div className={styles.card}>
-          <h3>Café de Colombia</h3>
-          <p>Notas afrutadas y balance perfecto.</p>
+      {/* Sección Destacados */}
+      <section className={styles.catalogSection}>
+        <h2 className={styles.sectionTitle}>Productos Destacados</h2>
+        
+        {/* solo 4 productos */}
+        <ItemListContainer isHome={true} />
+        
+        
+        <div style={{ textAlign: "center", marginTop: "20px" }}>
+          <Link to="/products">
+            <Button variant="primary">Ver Catálogo Completo</Button>
+          </Link>
         </div>
-
-        <div className={styles.card}>
-          <h3>Café de Brasil</h3>
-          <p>Cuerpo intenso, aroma dulce y tostado natural.</p>
-        </div>
-
-        <div className={styles.card}>
-          <h3>Café de Kenia</h3>
-          <p>Personalidad cítrica y sabor profundo.</p>
-        </div>
-      </div>
-    </section>
-
-  </div>
-);
+      </section>
+    </div>
+  );
+};
 
 export default Home;

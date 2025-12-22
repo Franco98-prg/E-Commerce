@@ -1,0 +1,95 @@
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.title {
+  color: #4B2E1F;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.emptyContainer {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.emptyContainer h2 {
+  color: #4B2E1F;
+  margin-bottom: 10px;
+}
+
+.emptyContainer p {
+  margin-bottom: 20px;
+  color: #1C140F;
+}
+
+/* LISTA DE ITEMS */
+.cartList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #CFA878;
+}
+
+.info h3 {
+  color: #4B2E1F;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.info p {
+  font-size: 0.9rem;
+  color: #1C140F;
+}
+
+.actions {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.subtotal {
+  font-weight: bold;
+  color: #4B2E1F;
+  font-size: 1.1rem;
+}
+
+.removeBtn {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+
+/* FOOTER DEL CARRITO */
+.footer {
+  border-top: 2px solid #4B2E1F;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.total {
+  font-size: 1.5rem;
+  color: #4B2E1F;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}

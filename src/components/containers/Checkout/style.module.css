@@ -1,0 +1,66 @@
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.title {
+  color: #4B2E1F;
+  margin-bottom: 25px;
+}
+
+.text {
+  font-size: 1.1rem;
+  color: #1C140F;
+}
+
+.orderId {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6B8A5B; 
+  margin: 15px 0 30px 0;
+  padding: 10px;
+  background-color: #f0fdf4;
+  border: 1px dashed #6B8A5B;
+  border-radius: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-weight: 600;
+  color: #4B2E1F;
+  font-size: 0.95rem;
+}
+
+.field input {
+  padding: 12px;
+  border: 1px solid #CFA878;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #4B2E1F;
+}
+
+.submitBtn {
+  margin-top: 10px;
+  width: 100%;
+}

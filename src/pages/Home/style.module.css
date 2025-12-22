@@ -1,90 +1,71 @@
-/* GENERAL */
+/* CONTENEDOR PRINCIPAL */
 .container {
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: 0 auto;
-  color: #1C140F;
-  font-family: system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 40px;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
   background: linear-gradient(
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
-  ),
-  url("/src/assets/Products/ChatGPT\ Image\ 29\ nov\ 2025\,\ 23_27_51.png") center/cover no-repeat;
-  height: 32vh;
+    ),
+    url("/src/assets/Products/ChatGPT Image 29 nov 2025, 23_27_51.png") center/cover no-repeat;
+  
+  height: 40vh; /* Un poco más alto para impacto visual */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrado vertical */
+  align-items: center; /* Centrado horizontal */
   text-align: center;
-  padding: 80px 20px;
-  background-color: #F3E9D7;
+  
   border-radius: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
 
 .title {
-  font-size: 3rem;
-  color: #bebdbdaa;
+  font-size: 3.5rem;
+  color: #F3E9D7; 
   font-weight: 700;
-  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin: 0;
 }
+
 
 .subtitle {
-  font-size: 1.2rem;
-  color: #d4d4d4b1;
-  margin-bottom: 46px;
+  font-size: 1.4rem;
+  margin-top: 15px;
+  color: #F3E9D7;
+  opacity: 0.9;
+  font-weight: 400;
 }
 
-.heroButton {
-  display: inline-block;
-  background-color: #4b2e1faf;
-  color: #f3e9d7c1;
-  padding: 12px 28px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: all 0.2s ease;
-}
-
-.heroButton:hover {
-  background-color: #3d2419;
-  transform: translateY(-3px);
-}
-
-/* DESTACADOS */
-.sectionTitle {
-  font-size: 2rem;
-  color: #4B2E1F;
+/* SECCIÓN CATÁLOGO (DESTACADOS) */
+.catalogSection {
   text-align: center;
-  margin-bottom: 25px;
+  padding: 0 10px;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
 
-.card {
-  background-color: #ffffff;
-  padding: 25px 20px;
-  border-radius: 15px;
-  border: 1px solid #CFA878;
-  transition: all 0.25s ease;
-}
-
-.card h3 {
-  margin-bottom: 10px;
+.sectionTitle {
+  font-size: 2.2rem;
   color: #4B2E1F;
-  font-size: 1.3rem;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
 }
 
-.card p {
-  color: #1C140F;
-}
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 18px rgba(0,0,0,0.1);
-  border-color: #4B2E1F;
+.sectionTitle::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #CFA878; 
+  margin: 10px auto 0;
+  border-radius: 2px;
 }

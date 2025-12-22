@@ -1,0 +1,35 @@
+.widget {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  position: relative; 
+  margin-left: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.widget:hover {
+  transform: scale(1.05); 
+}
+
+.icon {
+  width: 28px;  
+  height: 28px;
+  object-fit: contain;
+}
+
+.badge {
+  background-color: #CFA878; 
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  
+
+  position: absolute;
+  top: -5px; 
+  right: -8px;
+  
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
