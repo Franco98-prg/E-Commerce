@@ -9,7 +9,6 @@ const ItemList = ({ products }) => {
       {products.map((product) => (
         <div key={product.id} className={styles.card}>
           <img src={product.image} alt={product.name} className={styles.img} />
-          {/* <img src={`/Products/${product.image}`}  alt={product.name} className={styles.itemImg} /> */}
           <h3 className={styles.title}>{product.name}</h3>
           <p className={styles.category}>{product.category}</p>
           <p className={styles.price}>${product.price}</p>
