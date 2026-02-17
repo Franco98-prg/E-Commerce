@@ -36,6 +36,14 @@
   margin-bottom: 30px;
 }
 
+.cartImg {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
 .cartItem {
   display: flex;
   justify-content: space-between;
