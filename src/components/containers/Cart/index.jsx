@@ -28,6 +28,7 @@ const Cart = () => {
         {cart.map((prod) => (
           <div key={prod.id} className={styles.cartItem}>
             <div className={styles.info}>
+              <img src={product.image} alt={product.name} className={styles.img} />
               <h3>{prod.name}</h3>
               <p>Precio unitario: ${prod.price}</p>
               <p>Cantidad: {prod.quantity}</p>
