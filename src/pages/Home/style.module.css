@@ -12,7 +12,7 @@
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
     ),
-    url("/src/assets/Products/ChatGPT Image 29 nov 2025, 23_27_51.png") center/cover no-repeat;
+    url("/img/Products/ChatGPT Image 29 nov 2025, 23_27_51.png") center/cover no-repeat;
   
   height: 40vh; /* Un poco más alto para impacto visual */
   display: flex;
